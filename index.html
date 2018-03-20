@@ -2,21 +2,32 @@
 <html>
 	<head>
 		<title>Invie - rockea sin estres</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/invie.css">
+		<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat|Roboto" rel="stylesheet">
 	</head>
 	<body>
-		<header> <!-- header -->
 
-			<figure> <!-- logotipo -->
-				<img src="" />
+		<header id="header" class="header contenedor" > <!-- header -->
+
+			<figure class="logotipo" > <!-- logotipo -->
+				<img src="./images/invie.png" widht="186" height="60" alt="Invie logotipo" />
 			</figure>
-			<nav> <!-- menu -->
+
+			<nav class="menu" > <!-- menu -->
 				<ul>
+
+						
 					<li>
-						<a href="">Home</a>
+						<a href="index.html" >Home</a>
 					</li>
 
 					<li>
-						<a href="">Precios</a>
+						<a href="#guitarras" >Guitarras</a>
+					</li>
+
+					<li>
+						<a href="precios.hmtl">Precios</a>
 					</li>
 
 				</ul>
@@ -24,18 +35,26 @@
 
 		</header>
 
-		<section> <!-- Portada -->
-			<h1>Guitarras inviesibles</h1> <!-- titulo -->
-			<h3>Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
-			<button>Conoce mas</button> <!-- boton -->
+		<section id="portada" class="portada" > <!-- Portada -->
+
+			<div class="contenedor">
+				<h1 class="titulo" >Guitarras inviesibles</h1> <!-- titulo -->
+				<h3 class="title-a" >Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
+				<button >Conoce mas</button> <!-- boton -->
+			<div>
+
 		</section>
 
 
-		<section> <!-- guitarras -->
-			<h2>Nuestras guitarras</h2> <!-- titulo -->
-			<article> <!-- Guitarra 1 -->
-				<img src="" />
-				<h3>Invie Acustica</h3>
+		<section id="guitarras" class="guitarras contenedor" > <!-- guitarras -->
+
+
+			<h2 > Nuestras guitarras</h2> <!-- titulo -->
+
+
+			<article class="guitarra"> <!-- Guitarra 1 -->
+				<img src="./images/invie-acustica.png" width="200" alt="Guitarra Invie Acustica" class="imagen"/>
+				<h3 class="title-b" >Invie Acustica</h3>
 				<ol>
 					<li>Estilo vintage</li>
 					<li>Madera pura</li>
@@ -43,15 +62,16 @@
 				</ol>
 			</article>
 
-			<article> <!-- Guitarra 2 -->
-				<img src="" />
-				<h3>Invie Acustica</h3>
+			<article class="guitarra"> <!-- Guitarra 2 -->
+				<img src="./images/invie-classic.png" width="200" alt="Guitarra Invie Classic" class="imagen" />
+				<h3 class="title-b" >Invie Classic</h3>
 				<ol>
 					<li>Estilo vintage</li>
 					<li>Liviana</li>
 					<li>Inicia tu camino como rockstar</li>
 				</ol>
 			</article>
+
 		</section>
 	</body>
 </html>
