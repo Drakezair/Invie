@@ -8,39 +8,39 @@
 	</head>
 	<body>
 
-		<header id="header" class="header contenedor" > <!-- header -->
 
-			<figure class="logotipo" > <!-- logotipo -->
-				<img src="./images/invie.png" widht="186" height="60" alt="Invie logotipo" />
-			</figure>
+		<section id="portada" class="portada" > <!-- Portada -->
+			<header id="header" class="header contenedor" > <!-- header -->
 
-			<nav class="menu" > <!-- menu -->
-				<ul>
+				<figure class="logotipo" > <!-- logotipo -->
+					<img src="./images/invie.png" widht="186" height="60" alt="Invie logotipo" />
+				</figure>
 
-						
-					<li>
-						<a href="index.html" >Home</a>
-					</li>
+				<nav class="menu" > <!-- menu -->
+					<ul>
 
-					<li>
-						<a href="#guitarras" >Guitarras</a>
-					</li>
+							
+						<li>
+							<a href="index.html" >Home</a>
+						</li>
 
-					<li>
-						<a href="precios.hmtl">Precios</a>
-					</li>
+						<li>
+							<a href="#guitarras" >Guitarras</a>
+						</li>
 
-				</ul>
-			</nav>
+						<li>
+							<a href="precios.html">Precios</a>
+						</li>
 
-		</header>
+					</ul>
+				</nav>
 
-		<section id="portada" class="portada contenedor" > <!-- Portada -->
+			</header>
 
 			<div class="contenedor">
-				<h1 class="titulo" >Guitarras inviesibles</h1> <!-- titulo -->
+				<h1 class="titulo" >Guitarras <span>invie</span>sibles</h1> <!-- titulo -->
 				<h3 class="title-a" >Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
-				<button >Conoce mas</button> <!-- boton -->
+				<a class="button" href="#guitarras" >Conoce mas</a> <!-- boton -->
 			<div>
 
 		</section>
@@ -65,7 +65,7 @@
 				</div>
 			</article>
 
-			<article class="guitarra"> <!-- Guitarra 2 -->
+			<article class="guitarra b"> <!-- Guitarra 2 -->
 				<img src="./images/invie-classic.png" width="350" alt="Guitarra Invie Classic" class="imagen left" />
 
 				<div class="contenedor-guitarra-2">
@@ -79,5 +79,73 @@
 			</article>
 
 		</section>
+
+		<footer class="footer" >
+
+			<div class="contenedor">
+
+				<div class="contacto" > <!-- contacto -->
+
+					<img src="images/invie-white.png" alt="logo blanco" />
+	
+					<a href="tel:+584125223125"><strong>Telefono</strong> <span>256256413597</span></a>
+
+					<a href="mailto:"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+
+				</div>
+
+				<form class="formulario" > <!-- formulario -->
+ 					
+ 					<div class="col1">
+						<label for="nombre" >Nombre</label>    				<!-- nombre -->
+						<input type="text" id="nombre" required name="nombre" />
+						<label for="email" >E-mail<label>          <!-- email -->
+						<input type="text" id="email" required name="email" />
+						<div class="sexo">
+							<label for="mujer">
+								<input type="radio" name="sexo" id="mujer" value="mujer" >Mujer
+							</label>
+	
+							<label for="hombre">
+								<input type="radio" name="sexo" id="hombre" value="hombre" >Hombre
+							</label>
+						</div>
+
+						<div class="intereses" >
+
+							<label for="cotizacion">
+								<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion" >Cotización
+							</label>
+
+
+							<label for="reclamos">
+								<input type="checkbox" id="reclamos" name="intereses" value="reclamos" >Reclamos
+							</label>
+
+
+							<label for="comentarios">
+								<input type="checkbox" id="comentarios" name="intereses" value="comentarios" >Comentarios
+							</label>
+
+							<label for="otros">
+								<input type="checkbox" id="otros" name="intereses" value="otros" >Otros
+							</label>
+						</div>
+
+					</div>
+					<div class="col2">
+						
+						<label for="comentarios"> Comentarios </label>
+						<textarea for="comentarios" rows="7" cols="20"></textarea>
+						<input type="submit" name="" value="Enviar">
+
+					</div>
+
+				</form>
+
+			</div>
+
+		</footer>
+
 	</body>
 </html>

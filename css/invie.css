@@ -5,8 +5,12 @@ body {
 
 .titulo {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 70px;
+	font-size: 60px;
 	margin-bottom: 0;
+}
+
+.titulo span {
+	text-decoration: underline;
 }
 
 .title-a {
@@ -29,14 +33,13 @@ body {
 
 .portada {
 	background-image: url('../images/background.png');
+	background-size: cover;
 	color: #fff;
 	padding: 20px;
+	height: 400px;
 
 }
 
-.portada button {
-	margin-bottom: 70px;
-}
 
 .menu {
 	font-size: 24px;
@@ -51,8 +54,14 @@ body {
 	margin-left: 30px;
 }
 
+.menu a {
+	color:white;
+	text-decoration: none;
+}
+
 .logotipo {
 	display: inline-block;
+	margin-left: 0;
 }
 
 .contenedor {
@@ -62,13 +71,17 @@ body {
 
 .guitarra{
 	border: 1px solid #1F313C;
-	border-radius: 18px;
+	border-radius: 8px;
 	padding: 10px;
 	margin: 10px;
 }
 
 .guitarra ol {
 	padding: 0;
+}
+
+.guitarra.b {
+	height: 190px;
 }
 
 .right {
@@ -80,7 +93,6 @@ body {
 .left {
 	float: left;
 	position: relative;
-	top: 80px;
 }
 
 .contenedor-guitarra-1 {
@@ -90,8 +102,119 @@ body {
 .contenedor-guitarra-2 {
 	margin-left: 370px;	
 	padding: 10px;
+	position: relative;
+	bottom: 100px;
 }
 
 .header {
 	position: relative;
+
 }
+
+.footer {
+	background: #273b47;
+}
+
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contacto img {
+	display: block;
+}
+
+.contacto strong {
+	display: block
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white;
+	padding:  50px 10px
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.col1 {
+	margin-right: 10px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.intereses label {
+	font-size: 14px
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px
+}
+
+.sexo {
+	margin-top: 10px
+}
+
+.col2 textarea {
+	margin-bottom: 10px;
+	resize: none;
+}
+
+.button {
+	text-decoration: none;
+	border-radius: 12px;
+	border: none;
+	color: white;
+	padding: 7px 12px;
+	font-size: 20px;
+	background: linear-gradient(to left,#fe344e,#ff7250);
+	cursor: pointer;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background: #273b47;
+	color: white;
+	padding: 10px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table,td,th {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+
+.menu li:before {
+	content: '∘';
+	font-size: 30px;
+}
+
+
+
