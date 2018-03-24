@@ -3,6 +3,40 @@ body {
 	margin: 0;
 }
 
+table {
+	width: 100%;
+}
+
+th {
+	background: #273b47;
+	color: white;
+	padding: 10px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table,td,th {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+input, textarea{
+	outline: 0;
+}
+
+input:focus, textarea:focus {
+	background: lightgray;
+}
+
+
+.contenedor {
+	margin: auto;
+	width: 800px;
+	position: relative;
+}
 .titulo {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 60px;
@@ -25,12 +59,17 @@ body {
 
 .guitarras {
 	color: #1F313C;
+	margin-bottom: 60px;
 }
 
 .guitarras h2 {
 	font-size: 35px;
 }
 
+.guitarra.b {
+	height: 190px;
+	margin-bottom: 60px;
+}
 .portada {
 	background-image: url('../images/background.png');
 	background-size: cover;
@@ -64,10 +103,6 @@ body {
 	margin-left: 0;
 }
 
-.contenedor {
-	margin: auto;
-	width: 800px;
-}
 
 .guitarra{
 	border: 1px solid #1F313C;
@@ -80,9 +115,6 @@ body {
 	padding: 0;
 }
 
-.guitarra.b {
-	height: 190px;
-}
 
 .right {
 	float: right;
@@ -190,25 +222,6 @@ body {
 	cursor: pointer;
 }
 
-table {
-	width: 100%;
-}
-
-th {
-	background: #273b47;
-	color: white;
-	padding: 10px;
-	text-align: left;
-}
-
-td {
-	padding: 20px;
-}
-
-table,td,th {
-	border: 1px solid #273b47;
-	border-collapse: collapse;
-}
 
 
 .menu li:before {
@@ -216,5 +229,12 @@ table,td,th {
 	font-size: 30px;
 }
 
+.tabla {
+	margin: 80px 0;
+}
+
+.p {
+	background: #273b47;
+}
 
 
